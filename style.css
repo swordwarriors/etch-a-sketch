@@ -46,7 +46,7 @@ html,body{
   } */
 
 body{
-  background-color: aquamarine;
+  background-color: rgb(210, 206, 219);
   display: flex;
   justify-content: center;
   flex-direction: column;
