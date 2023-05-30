@@ -1,0 +1,79 @@
+/* 
+html,body{
+  width: 100%;
+  
+  }
+ body{
+    background-color: #98b4b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  h1{
+    text-align: center;
+
+  }
+  
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(119, 145, 136);
+    box-sizing: content-box;
+    justify-content: center;
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    padding: none;
+    border: none;
+    align-self: center;
+  }
+  div{
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    box-sizing: content-box;
+  }
+  #container>div:nth-child(16n+1) {
+    width: 100%;
+  }
+  #container>div:hover{
+    background-color: black;
+  }
+  .my-color-class{
+    background-color: black;
+  } */
+
+body{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+h1{
+  text-align: center;
+}
+#container {
+  display: grid;
+  grid-gap: 0.1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  background-color: rgb(189, 160, 160);
+  align-self: center;
+  width: 800px;
+  height: 800px;
+}
+
+.grid-item {
+  padding: fill;
+  border: 0.1px solid #ddd;
+  text-align: center;
+}
+.my-color-class{
+  background-color: black;
+}
