@@ -38,12 +38,12 @@ function getNumofPixels(){
   }
   numOfRows = rows
   numOfCols = cols
-  removeStyles()
+  removeDiv()
   makeRows(numOfRows,numOfCols)
   
   
 }
-function removeStyles(){
+function removeDiv(){
   numOfCells = container.childElementCount
   for (lcv = 0; lcv < numOfCells;lcv++){
     container.lastElementChild.remove();
